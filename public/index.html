@@ -27,7 +27,7 @@
             return `${key}=` + encodeURIComponent(options[key]);
           }).join("&");
 
-          let authURL = `${AWS_URL}?${QueryString}`;
+          let authURL = `${AWS_UR}?${QueryString}`;
 
           $('#oauth').append(`<a href="${authURL}">Login With AWS</a>`);
 
